@@ -1,0 +1,89 @@
+@import "../main.scss";
+.HomepageNav {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    &-logo {
+        height: 100px;
+        margin-left: 70px;
+        &-img {
+            width: 79px;
+            height: 48px;
+        }
+    }
+    &-item {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        justify-content: center;
+        position: absolute;
+        right: 50px;
+        align-items: center;
+        &-name {
+            margin: 0 25px;
+            &-btncss {
+                width: 148px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $orange-color;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.Homediv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column-reverse;
+    }
+    &-img {
+        width: 60%;
+        height: 100%;
+        @media only screen and (max-width: 1000px) {
+            width: 100%;
+        }
+        &-imglogo {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-text {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 52px;
+        font-family: 'Comforter Brush', cursive;
+        @media only screen and (max-width: 1000px) {
+            width: 100%;
+            margin: 50px 0 0 0;
+            font-size: 40px;
+        }
+        p {
+            width: 80%;
+            @media only screen and (max-width: 1000px) {
+                width: 50%;
+            }
+        }
+    }
+}
+
+.companylogo {
+    position: fixed;
+    bottom: 20px;
+    margin: 0 0 0 20px;
+    width: 90px;
+    height: 90px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

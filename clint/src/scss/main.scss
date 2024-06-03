@@ -1,0 +1,77 @@
+$orange-color:#FAA286;
+$backgroun-color:#262626;
+$font-light:#ffff;
+$font-dark:#262626;
+$field-bg:#F6F6F6;
+$navbar-color:#454545;
+@media(prefers-color-scheme: dark) {
+    body {
+        background: #262626;
+        color: $font-light;
+        font-family: 'Bai Jamjuree', sans-serif;
+        .navlink:link {
+            color: $font-light;
+            text-decoration: none !important;
+        }
+        /* visited link */
+        .navlink:visited {
+            color: $font-light;
+            text-decoration: none !important;
+        }
+        /* mouse over link */
+        .navlink:hover {
+            color: $font-light;
+            text-decoration: none !important;
+            ;
+        }
+        /* selected link */
+        .navlink:active {
+            color: $font-light !important;
+            text-decoration: none !important;
+        }
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    body {
+        background: $font-light;
+        color: #262626;
+        font-family: 'Bai Jamjuree', sans-serif;
+        .navlink:link {
+            color: $font-dark;
+            text-decoration: none !important;
+        }
+        /* visited link */
+        .navlink:visited {
+            color: $font-dark;
+            text-decoration: none !important;
+        }
+        /* mouse over link */
+        .navlink:hover {
+            color: $font-dark;
+            text-decoration: none !important;
+            ;
+        }
+        /* selected link */
+        .navlink:active {
+            color: $font-dark !important;
+            text-decoration: none !important;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 20px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: $font-dark;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: $orange-color;
+}

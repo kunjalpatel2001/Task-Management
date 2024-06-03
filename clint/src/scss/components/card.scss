@@ -1,0 +1,67 @@
+@import "../main.scss";
+.cardcss {
+    width: 270px;
+    height: 120px;
+    background: $navbar-color;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+    color: white !important;
+    .cardtitle {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .cardmember {
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 12px
+    }
+    .assigneebtn {
+        width: 90px;
+        height: 30px;
+        background: #6C6D6D;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
+
+.searchbar {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #6C6D6D;
+    border: none;
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px;
+    &:active {
+        border: none;
+        outline: none;
+    }
+    &:visited {
+        border: none;
+        outline: none;
+    }
+    &:focus-visible {
+        border: none;
+        outline: none;
+    }
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+
+::placeholder {
+    color: white;
+}
